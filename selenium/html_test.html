@@ -5,6 +5,7 @@
     <title>페이지 소개</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="default.css">   
+    <!-- <script src='./gg.js'></script> -->
   </head>
   <body>
     <div class="container mt-5">
@@ -32,10 +33,11 @@
           <a href="https://www.op.gg/summoner/userName=%EC%9D%B4%EC%9C%A0+%EC%97%86%EC%9D%8C%EC%9D%98+%EC%9C%84%EB%A1%9C" class="list-group-item list-group-item-action">이유 없음의 위로</a>
           <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
         </div>
-        <div class="topnav col-4">
-          <form action="#">
-            <input type="text" placeholder="Search.." name="소환사명을 입력해주세요">
-            <button type="submit">검색</button>
+        <div class="topnav col-4" >
+          <form class='search' action="https://www.op.gg/summoner/">
+            <input  class="keyword" type="text" placeholder="소환사명을 입력해주세요" name="userName" value="">
+            <!-- 일단 네임으로 값을 넘기고? 그걸 자바크립트 함수로 받고 함수에서 반환값을 주고? 그거를 주소에다가 더하면? 근데 클릭하면 주소로 이동해야하니까 바로바로 함수를 반환할수있는 걸 넣어야겠네 -->
+            <button class="img-button" value ="" type="submit">검색</button>
           </form>
         </div>
       </div>
